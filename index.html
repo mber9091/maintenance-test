@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Maintenance</title>
+
+    <style>
+      /* =========================
+       Minimal CSS Reset
+       ========================= */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          Helvetica,
+          Arial,
+          sans-serif;
+      }
+
+      img,
+      picture,
+      video,
+      canvas,
+      svg {
+        display: block;
+        max-width: 100%;
+      }
+
+      input,
+      button,
+      textarea,
+      select {
+        font: inherit;
+      }
+
+      /* =========================
+       Maintenance Page Styles
+       ========================= */
+      body {
+        background-image: url("./bg.jpg");
+        background-size: cover; /* keeps ratio, fills viewport */
+        background-position: center; /* centers image */
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem;
+        color: #f8fafc;
+      }
+
+      .image {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      @media (min-width: 992px) {
+        .show-desktop {
+          display: block;
+        }
+        .show-mobile {
+          display: none;
+        }
+      }
+      @media (max-width: 991px) {
+        .show-desktop {
+          display: none;
+        }
+        .show-mobile {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <img
+        class="image show-desktop"
+        src="./fr-content-desktop.png"
+        alt="Maintenance desktop image"
+      />
+      <img
+        class="image show-mobile"
+        src="./fr-content-mobile.png"
+        alt="Maintenance mobile image"
+      />
+    </main>
+  </body>
+</html>
